@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1023</width>
+    <height>605</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>疲劳驾驶提醒系统</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>10</y>
+     <width>941</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt;&quot;&gt;Fatigue Driving Prompting Device Based On Machine Vision Human Eye Recognition&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>40</y>
+     <width>1081</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>60</y>
+     <width>341</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Features:</string>
+   </property>
+   <widget class="QPushButton" name="openPushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Open</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="analysisPushButton">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>20</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Analysis</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="savePushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Save Datas</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="closePushButton">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>20</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Close</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="eyePushButton">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>70</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Eye Recog</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="facePushButton">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>70</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>face Recog</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>50</y>
+     <width>16</width>
+     <height>561</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>60</y>
+     <width>311</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Capture Video:</string>
+   </property>
+   <widget class="QLabel" name="label_image">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>271</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../桌面/图片1.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="Line" name="line_3">
+   <property name="geometry">
+    <rect>
+     <x>367</x>
+     <y>310</y>
+     <width>701</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_4">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>180</y>
+     <width>367</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_5">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>450</y>
+     <width>367</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>200</y>
+     <width>341</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Opening Degree Curve:</string>
+   </property>
+   <widget class="QCustomPlot" name="widgetPlot" native="true">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>321</width>
+      <height>211</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>470</y>
+     <width>341</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Results:</string>
+   </property>
+   <widget class="QLineEdit" name="lineEdit_Alarm">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>90</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>None</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_FatigueStatus">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>60</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>None fatigue</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>43</x>
+      <y>60</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Fatigue Status:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>30</y>
+      <width>72</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PERCLOS:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_Perclos">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>30</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0.67</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>90</y>
+      <width>111</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Alarm System:</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_5">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>330</y>
+     <width>631</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Detail:</string>
+   </property>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>611</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="verticalScrollMode">
+     <enum>QAbstractItemView::ScrollPerItem</enum>
+    </property>
+    <property name="horizontalScrollMode">
+     <enum>QAbstractItemView::ScrollPerItem</enum>
+    </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>112</number>
+    </attribute>
+    <row>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>2</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>3</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>4</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>5</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>6</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>7</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>8</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>9</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>Time</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Closed frames</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Total Frames</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Frame Ratio</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Frequency</string>
+     </property>
+    </column>
+    <item row="0" column="0">
+     <property name="text">
+      <string>10.00s</string>
+     </property>
+    </item>
+    <item row="0" column="1">
+     <property name="text">
+      <string>23</string>
+     </property>
+    </item>
+    <item row="0" column="2">
+     <property name="text">
+      <string>100</string>
+     </property>
+    </item>
+    <item row="0" column="3">
+     <property name="text">
+      <string>0.23</string>
+     </property>
+    </item>
+    <item row="0" column="4">
+     <property name="text">
+      <string>24</string>
+     </property>
+    </item>
+    <item row="1" column="0">
+     <property name="text">
+      <string>10.00s</string>
+     </property>
+    </item>
+    <item row="1" column="1">
+     <property name="text">
+      <string>56</string>
+     </property>
+    </item>
+    <item row="1" column="2">
+     <property name="text">
+      <string>100</string>
+     </property>
+    </item>
+    <item row="1" column="3">
+     <property name="text">
+      <string>0.56</string>
+     </property>
+    </item>
+    <item row="1" column="4">
+     <property name="text">
+      <string>27</string>
+     </property>
+    </item>
+    <item row="2" column="0">
+     <property name="text">
+      <string>10.00s</string>
+     </property>
+    </item>
+    <item row="2" column="1">
+     <property name="text">
+      <string>43</string>
+     </property>
+    </item>
+    <item row="2" column="2">
+     <property name="text">
+      <string>100</string>
+     </property>
+    </item>
+    <item row="2" column="3">
+     <property name="text">
+      <string>0.43</string>
+     </property>
+    </item>
+    <item row="2" column="4">
+     <property name="text">
+      <string>24</string>
+     </property>
+    </item>
+    <item row="3" column="0">
+     <property name="text">
+      <string>10.00s</string>
+     </property>
+    </item>
+    <item row="3" column="1">
+     <property name="text">
+      <string>27</string>
+     </property>
+    </item>
+    <item row="3" column="2">
+     <property name="text">
+      <string>100</string>
+     </property>
+    </item>
+    <item row="3" column="3">
+     <property name="text">
+      <string>0.27</string>
+     </property>
+    </item>
+    <item row="3" column="4">
+     <property name="text">
+      <string>23</string>
+     </property>
+    </item>
+    <item row="4" column="0">
+     <property name="text">
+      <string>10.00s</string>
+     </property>
+    </item>
+    <item row="4" column="1">
+     <property name="text">
+      <string>87</string>
+     </property>
+    </item>
+    <item row="4" column="2">
+     <property name="text">
+      <string>100</string>
+     </property>
+    </item>
+    <item row="4" column="3">
+     <property name="text">
+      <string>0.87</string>
+     </property>
+    </item>
+    <item row="4" column="4">
+     <property name="text">
+      <string>29</string>
+     </property>
+    </item>
+    <item row="5" column="0">
+     <property name="text">
+      <string>10.00s</string>
+     </property>
+    </item>
+    <item row="5" column="1">
+     <property name="text">
+      <string>85</string>
+     </property>
+    </item>
+    <item row="5" column="2">
+     <property name="text">
+      <string>100</string>
+     </property>
+    </item>
+    <item row="5" column="3">
+     <property name="text">
+      <string>0.85</string>
+     </property>
+    </item>
+    <item row="5" column="4">
+     <property name="text">
+      <string>32</string>
+     </property>
+    </item>
+    <item row="6" column="0">
+     <property name="text">
+      <string>10.00s</string>
+     </property>
+    </item>
+    <item row="6" column="1">
+     <property name="text">
+      <string>74</string>
+     </property>
+    </item>
+    <item row="6" column="2">
+     <property name="text">
+      <string>100</string>
+     </property>
+    </item>
+    <item row="6" column="3">
+     <property name="text">
+      <string>0.74</string>
+     </property>
+    </item>
+    <item row="6" column="4">
+     <property name="text">
+      <string>28</string>
+     </property>
+    </item>
+    <item row="7" column="0">
+     <property name="text">
+      <string>10.00s</string>
+     </property>
+    </item>
+    <item row="7" column="1">
+     <property name="text">
+      <string>67</string>
+     </property>
+    </item>
+    <item row="7" column="2">
+     <property name="text">
+      <string>100</string>
+     </property>
+    </item>
+    <item row="7" column="3">
+     <property name="text">
+      <string>0.67</string>
+     </property>
+    </item>
+    <item row="7" column="4">
+     <property name="text">
+      <string>29</string>
+     </property>
+    </item>
+    <item row="8" column="0">
+     <property name="text">
+      <string>10.00s</string>
+     </property>
+    </item>
+    <item row="8" column="1">
+     <property name="text">
+      <string>34</string>
+     </property>
+    </item>
+    <item row="8" column="2">
+     <property name="text">
+      <string>100</string>
+     </property>
+    </item>
+    <item row="8" column="3">
+     <property name="text">
+      <string>0.34</string>
+     </property>
+    </item>
+    <item row="8" column="4">
+     <property name="text">
+      <string>16</string>
+     </property>
+    </item>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_6">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>60</y>
+     <width>311</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Eyes:</string>
+   </property>
+   <widget class="QLabel" name="label_image_left_eye">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>121</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../桌面/图片1.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_image_right_eye">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>30</y>
+      <width>121</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../桌面/图片1.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="Line" name="line_6">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>10</y>
+      <width>10</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_7">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>130</y>
+      <width>311</width>
+      <height>10</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_image_left_eye_bi">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>150</y>
+      <width>121</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../桌面/图片1.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_image_right_eye_bi">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>150</y>
+      <width>121</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../桌面/图片1.jpg</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pushButton_reset">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>3</y>
+     <width>51</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>../../qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
